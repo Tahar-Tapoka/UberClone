@@ -5,12 +5,20 @@ import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import { store } from "./store";
+import { NavigationContainer } from "@react-navigation/native";
+import AppNavigator from "./navigation/AppNavigator";
 
 export default function App() {
   return (
     <Provider store={store}>
+      {/* <NavigationContainer>
+        <View style={styles.container}>
+          <HomeScreen />
+          <ExpoStatusBar style="auto" />
+        </View>
+      </NavigationContainer> */}
       <View style={styles.container}>
-        <HomeScreen />
+        <AppNavigator />
         <ExpoStatusBar style="auto" />
       </View>
     </Provider>

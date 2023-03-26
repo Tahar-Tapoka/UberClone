@@ -1,4 +1,6 @@
 node_modules/
+googleApi.*
+.env
 .expo/
 dist/
 npm-debug.*
